@@ -17,8 +17,14 @@
     body {
       font-family: 'Roboto', sans-serif;
     }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem; /* Add space between items */
+    }
     .grid-item {
-      margin-bottom: 1rem; /* Add some spacing between grid items */
+      width: calc(33.333% - 1rem); /* Adjust width based on the number of columns and gaps */
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -38,39 +44,35 @@
           <a href="#" data-filter=".drawings">Drawings</a>
           <a href="#" data-filter=".ui">UI Elements</a>
         </div>
-        <div class="grid">
+        <div class="grid" id="masonry-grid">
           <div class="grid-item logos">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-1.png">
-              <img src="http://poiemaweb.com/assets/images/dribbble-1.png" alt="Logo 1" />
-            </a>
+            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-1.png"></a>
           </div>
           <div class="grid-item drawings">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-2.png">
-              <img src="http://poiemaweb.com/assets/images/dribbble-2.png" alt="Drawing 1" />
-            </a>
+            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-2.png"></a>
           </div>
           <div class="grid-item drawings">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-3.png">
-              <img src="http://poiemaweb.com/assets/images/dribbble-3.png" alt="Drawing 2" />
-            </a>
+            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-3.png"></a>
+          </div>
+          <div class="grid-item webTemplates">
+            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-4.png"></a>
           </div>
           <!-- Add more grid items as needed -->
         </div>
       </div>
     </div>
   </div>
-  <!-- Initialize Masonry JS -->
+
+  <!-- Initialize Masonry -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var elem = document.querySelector('.grid');
-      var msnry = new Masonry(elem, {
-        // options
+    document.addEventListener('DOMContentLoaded', function() {
+      var grid = document.querySelector('#masonry-grid');
+      var msnry = new Masonry(grid, {
         itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
+        columnWidth: '.grid-item',
         percentPosition: true
       });
     });
   </script>
 </body>
 </html>
-
