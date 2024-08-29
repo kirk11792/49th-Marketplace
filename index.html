@@ -1,78 +1,357 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>49th Marketplace</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Masonry JS CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry-layout/4.2.2/masonry.pkgd.min.js"></script>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-  <!-- Font Awesome -->
+  <title>
+   49th Marketplace
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="/path/to/masonry.pkgd.min.js"> 
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <!-- Inline CSS -->
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem; /* Add space between items */
-    }
-    .grid-item {
-      width: calc(33.333% - 1rem); /* Adjust width based on the number of columns and gaps */
-      margin-bottom: 1rem;
-    }
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
   </style>
-</head>
-<body class="bg-[#18191A] text-white">
+ </head>
+ <body class="bg-[#18191A] text-white">
   <div class="flex">
-    <!-- Left Sidebar -->
-    <div class="w-1/4 p-4 border-r border-gray-700">
-      <div class="flex items-center justify-between mb-4">
-        <h1 class="text-3xl font-bold">49th Marketplace</h1>
+   <!-- Left Sidebar -->
+   <div class="w-1/4 p-4 border-r border-gray-700">
+    <div class="flex items-center justify-between mb-4">
+     <h1 class="text-3xl font-bold">
+      49th Marketplace
+     </h1>
+       <h1 style="text-align: center;">Isotope & Fancybox</h1>
+  <div class="wrapper">
+    <div class="filter">
+      <a href="#" data-filter="*" class="current">All Categories</a>
+      <a href="#" data-filter=".webTemplates">Web Templates</a>
+      <a href="#" data-filter=".logos">Logos</a>
+      <a href="#" data-filter=".drawings">Drawings</a>
+      <a href="#" data-filter=".ui">UI Elements</a>
+    </div>
+    <div class="grid">
+      <div class="grid-item logos">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-1.png"></a>
       </div>
-      <h2 class="text-center mb-4">Isotope & Fancybox</h2>
-      <div class="wrapper">
-        <div class="filter mb-4">
-          <a href="#" data-filter="*" class="current">All Categories</a>
-          <a href="#" data-filter=".webTemplates">Web Templates</a>
-          <a href="#" data-filter=".logos">Logos</a>
-          <a href="#" data-filter=".drawings">Drawings</a>
-          <a href="#" data-filter=".ui">UI Elements</a>
-        </div>
-        <div class="grid" id="masonry-grid">
-          <div class="grid-item logos">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-1.png"></a>
-          </div>
-          <div class="grid-item drawings">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-2.png"></a>
-          </div>
-          <div class="grid-item drawings">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-3.png"></a>
-          </div>
-          <div class="grid-item webTemplates">
-            <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-4.png"></a>
-          </div>
-          <!-- Add more grid items as needed -->
-        </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-2.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-3.png"></a>
+      </div>
+      <div class="grid-item webTemplates">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-4.png"></a>
+      </div>
+      <div class="grid-item webTemplates">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-5.png"></a>
+      </div>
+      <div class="grid-item ui">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-6.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-7.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-8.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-9.png"></a>
+      </div>
+      <div class="grid-item logos">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-10.png"></a>
+      </div>
+      <div class="grid-item ui">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-11.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-12.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-13.png"></a>
+      </div>
+      <div class="grid-item logos">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-14.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-15.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-16.png"></a>
+      </div>
+      <div class="grid-item logos">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-17.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-18.png"></a>
+      </div>
+      <div class="grid-item drawings">
+        <a class="fancybox" href="http://poiemaweb.com/assets/images/dribbble-19.png"></a>
       </div>
     </div>
   </div>
-
-  <!-- Initialize Masonry -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var grid = document.querySelector('#masonry-grid');
-      var msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-item',
-        percentPosition: true
-      });
-    });
-  </script>
-</body>
+     <i class="fas fa-cog text-gray-400">
+     </i>
+    </div>
+    <div class="mb-4">
+     <div class="bg-[#3A3B3C] rounded-full p-2 flex items-center">
+      <i class="fas fa-search text-gray-400 mr-2">
+      </i>
+      <input class="bg-transparent outline-none w-full" placeholder="Search Marketplace" type="text"/>
+     </div>
+    </div>
+    <div class="space-y-2">
+     <div class="flex items-center p-2 bg-[#3A3B3C] rounded-lg">
+      <i class="fas fa-th-large mr-3 text-blue-500">
+      </i>
+      <span>
+       Browse all
+      </span>
+     </div>
+     <div class="flex items-center p-2">
+      <i class="fas fa-bell mr-3 text-gray-400">
+      </i>
+      <span>
+       Notifications
+      </span>
+     </div>
+     <div class="flex items-center p-2">
+      <i class="fas fa-inbox mr-3 text-gray-400">
+      </i>
+      <span>
+       Inbox
+      </span>
+     </div>
+     <div class="flex items-center p-2">
+      <i class="fas fa-shopping-bag mr-3 text-gray-400">
+      </i>
+      <span>
+       Buying
+      </span>
+      <i class="fas fa-chevron-right ml-auto text-gray-400">
+      </i>
+     </div>
+     <div class="flex items-center p-2">
+      <i class="fas fa-tag mr-3 text-gray-400">
+      </i>
+      <span>
+       Selling
+      </span>
+      <i class="fas fa-chevron-right ml-auto text-gray-400">
+      </i>
+     </div>
+    </div>
+    <button class="w-full bg-[#2D88FF] text-white py-2 rounded-lg mt-4">
+     + Create new listing
+    </button>
+    <button class="w-full bg-[#3A3B3C] text-white py-2 rounded-lg mt-2">
+     Create multiple listings
+    </button>
+    <div class="mt-4">
+     <h2 class="font-semibold mb-2">
+      Location
+     </h2>
+     <p class="text-blue-400 text-sm">
+      Anchorage, Alaska · Within 10 mi
+     </p>
+    </div>
+    <div class="mt-4">
+     <h2 class="font-semibold mb-2">
+      Categories
+     </h2>
+     <div class="space-y-2">
+      <div class="flex items-center">
+       <i class="fas fa-car mr-3 text-gray-400">
+       </i>
+       <span>
+        Vehicles
+       </span>
+      </div>
+      <div class="flex items-center">
+       <i class="fas fa-home mr-3 text-gray-400">
+       </i>
+       <span>
+        Property Rentals
+       </span>
+      </div>
+      <div class="flex items-center">
+       <i class="fas fa-tshirt mr-3 text-gray-400">
+       </i>
+       <span>
+        Apparel
+       </span>
+      </div>
+      <div class="flex items-center">
+       <i class="fas fa-list mr-3 text-gray-400">
+       </i>
+       <span>
+        Classifieds
+       </span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="w-3/4 p-4">
+    <div class="flex justify-between items-center mb-4">
+     <h2 class="text-xl font-bold">
+      Today's picks
+     </h2>
+     <div class="flex items-center text-blue-400 text-sm">
+      <i class="fas fa-map-marker-alt mr-1">
+      </i>
+      <span>
+       Anchorage · 10 mi
+      </span>
+     </div>
+    </div>
+    <div class="grid grid-cols-5 gap-4">
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Wacom Cintiq drawing tablet" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/vjSMhFwr1Y6JJNAhrxsvNamlqUyGTVzQ0gNM3yeW3fZnhgXTA/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $200
+       </p>
+       <p class="text-sm">
+        Wacom Cintiq 21UX DTK-2100 21" LCD Drawing Tablet with all...
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="DTF Shaker and Heating Machine" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/YtybzK4NbUYcJNTU1s3YnVjWvDEzMutbKvTlgkKcuCvYI41E/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $4,500
+       </p>
+       <p class="text-sm">
+        DTF Shaker and Heating Machine
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Ibanez GSR206BNWF six string bass guitar" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/oWhc8oxS7YryD9BQ7kmYVuHv6wgGoDKzPfNCFCafNTyuhgXTA/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $180
+       </p>
+       <p class="text-sm">
+        Ibanez GSR206BNWF six string bass guitar
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Backyard Shed" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/UFQ8snQ6Fo4vKFYD58R2YgisUu0SE0I814TGYQNd9suYI41E/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $400
+       </p>
+       <p class="text-sm">
+        Backyard Shed
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Vinyl record holder" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/tRLG0sOqpqJ8LVPj9gybUl3F5UFfNPZxCiQQZoQgi0ZyQwrJA/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $5
+       </p>
+       <p class="text-sm">
+        Vinyl record holder
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Free bed and frame" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/5bPTYWtlkRJDDZBnGADg1eMogH6pGb4d0K9teH7kHS7mhgXTA/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        FREE
+       </p>
+       <p class="text-sm">
+        Free bed and frame
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="DeWalt dw610 router" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/TzIPr7bi3kpUAxphZg1QeoICeSgZezRfqeDdvFYJe6IfzQwrJA/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $50
+       </p>
+       <p class="text-sm">
+        DeWalt dw610 router
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Woods" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/kfvLjrIM8kWJW6Xo5ywRgPCLfew7CjiV85jGSB7kneTCGCeaC/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $150
+       </p>
+       <p class="text-sm">
+        woods
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="AquaTru Reverse Osmosis Counter Top Filter" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/zut9UwqBBYJkPxaOHrSxPIMVZUGdHqSZy3D89w1tUgXaI41E/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $150
+       </p>
+       <p class="text-sm">
+        AquaTru Reverse Osmosis Counter Top Filter
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+     <div class="bg-[#242526] rounded-lg overflow-hidden">
+      <img alt="Amazon fire stick" class="w-full h-40 object-cover" height="200" src="https://replicate.delivery/yhqm/HzhN2fqoXFwWbyyOT4G2p76su46jAPCcJSTxBAEYIfdthgXTA/out-0.png" width="300"/>
+      <div class="p-2">
+       <p class="font-bold">
+        $20
+       </p>
+       <p class="text-sm">
+        Amazon fire stick
+       </p>
+       <p class="text-xs text-gray-400">
+        Anchorage, AK
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
